@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Character } from "../src/components/Character";
+import { Search } from "../src/components/Search";
+import { SearchTerm } from "../src/components/SearchTerm";
 import "./App.css";
 import styled from "styled-components";
 
@@ -44,6 +46,8 @@ const App = () => {
           <Character props={characters} key={i} />
         ))}
       </Container>
+      <Search />
+      <SearchTerm />
     </div>
   );
 };
