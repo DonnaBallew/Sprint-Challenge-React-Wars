@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Title className="Header">Characters</Title>
+      <Title className="Header">Star Wars Characters</Title>
       <Container>
         {info.map((characters, i) => (
           <Character props={characters} key={i} />
